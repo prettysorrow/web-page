@@ -3,25 +3,38 @@
 {% block title %}projects{% endblock %}
 
 {% block content %}
+<style>
+    .project-links .list-group-item a {
+        color: white;
+        text-decoration: underline;
+        text-decoration-color: white;
+    }
+
+    .project-links .list-group-item a:hover {
+        color: gray;
+        text-decoration-color: gray;
+    }
+</style>
 <p class="lead text-white-50">Некоторые работы за последнее время</p>
 <div class="row justify-content-center">
-    <div class="col-md-15 text-start">
+    <div class="col-md-15 text-start project-links">
         <ul class="list-group list-group-flush">
             <li class="list-group-item bg-transparent text-white border-0">
-                <strong>ADT в rukaml:</strong> <a href="https://github.com/prettysorrow/third-sem-practice"
-                    class="text-white text-decoration-none">github.com/prettysorrow/third-sem-practice</a>
+                <strong>ADT в rukaml:</strong>
+                <a
+                    href="https://github.com/prettysorrow/third-sem-practice">github.com/prettysorrow/third-sem-practice</a>
             </li>
             <li class="list-group-item bg-transparent text-white border-0">
-                <strong>Интерпретатор miniML:</strong> <a href="https://github.com/Kakadu/fp25/pull/4"
-                    class="text-white text-decoration-none">github.com/Kakadu/fp25/pull/4</a>
+                <strong>Интерпретатор miniML:</strong>
+                <a href="https://github.com/Kakadu/fp25/pull/4">github.com/Kakadu/fp25/pull/4</a>
             </li>
             <li class="list-group-item bg-transparent text-white border-0">
-                <strong>Компилятор императивного языка:</strong> <a href="https://github.com/prettysorrow/compiler"
-                    class="text-white text-decoration-none">github.com/prettysorrow/compiler</a>
+                <strong>Компилятор императивного языка:</strong>
+                <a href="https://github.com/prettysorrow/compiler">github.com/prettysorrow/compiler</a>
             </li>
             <li class="list-group-item bg-transparent text-white border-0">
-                <strong>Персональная веб-страница:</strong> <a href="https://github.com/prettysorrow/web-page"
-                    class="text-white text-decoration-none">github.com/prettysorrow/web-page</a>
+                <strong>Персональная веб-страница:</strong>
+                <a href="https://github.com/prettysorrow/web-page">github.com/prettysorrow/web-page</a>
             </li>
         </ul>
         <div class="mt-4 text-center">
