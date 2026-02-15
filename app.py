@@ -84,7 +84,7 @@ class Comment(db.Model):
 
 class CommentForm(FlaskForm):
     body = TextAreaField('Comment', validators=[DataRequired(), Length(min=1, max=500)])
-    submit = SubmitField('Send')
+    submit = SubmitField('Отправить')
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -182,7 +182,7 @@ def comments():
         comment = Comment(body=form.body.data, user_id=current_user.id)
         db.session.add(comment)
         db.session.commit()
-        flash('Comment was added successfully!', 'success')
+        flash('Комментарий успешно добавлен', 'success')
         return redirect(url_for('comments'))
 
     return render_template('comments.html', comments=comments_list, form=form)
@@ -192,12 +192,12 @@ def comments():
 def delete_comment(comment_id):
     comment = Comment.query.get_or_404(comment_id)
     if comment.user_id != current_user.id:
-        flash('You can only delete your own comments.', 'danger')
+        flash('Вы можете удалять только свои комментарии.', 'danger')
         return redirect(url_for('comments'))
 
     db.session.delete(comment)
     db.session.commit()
-    flash('Comment deleted.', 'success')
+    flash('Комментарий удалён.', 'success')
     return redirect(url_for('comments'))
 
 @app.route('/login/yandex')

@@ -10,10 +10,6 @@
         box-shadow: none !important;
     }
 
-    .gif-background {
-        pointer-events: none;
-    }
-
     .cover-container {
         min-height: 100vh;
         display: flex;
@@ -306,7 +302,7 @@
                         onsubmit="return confirm('Удалить комментарий?');">
                         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                         <button class="btn btn-sm btn-outline-danger" type="submit">
-                            Delete
+                            Удалить
                         </button>
                     </form>
                 </div>
