@@ -3,18 +3,29 @@
 {% block title %}contacts{% endblock %}
 
 {% block content %}
-<h1>Контактные данные</h1>
+<style>
+    .contacts-links .list-group-item a {
+        color: white;
+        text-decoration-color: white;
+    }
+
+    .contacts-links .list-group-item a:hover {
+        color: gray;
+        text-decoration-color: gray;
+    }
+</style>
+<h2>Контактные данные</h2>
 <p class="lead text-white-50">Свяжитесь со мной удобным способом</p>
 <div class="row justify-content-center">
-    <div class="col-md-6 text-start">
+    <div class="col-md-15 text-start contacts-links">
         <ul class="list-group list-group-flush">
             <li class="list-group-item bg-transparent text-white border-0">
-                <strong>Telegram:</strong> <a href="https://t.me/prettysorrow"
-                    class="text-white text-decoration-none">@prettysorrow</a>
+                <strong>Telegram:</strong>
+                <a href="https://t.me/prettysorrow">@prettysorrow</a>
             </li>
             <li class="list-group-item bg-transparent text-white border-0">
-                <strong>GitHub:</strong> <a href="https://github.com/prettysorrow"
-                    class="text-white text-decoration-none">github.com/prettysorrow</a>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/prettysorrow">@prettysorrow</a>
             </li>
         </ul>
         <div class="mt-4 text-center">
