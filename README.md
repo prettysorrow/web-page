@@ -19,10 +19,12 @@ YANDEX_CLIENT_SECRET=...
 GOOGLE_CLIENT_ID=...
 GOOGLE_CLIENT_SECRET=...
 
-TARGET="REMOTE"
+TARGET=... # "LOCAL" | "REMOTE"
 REMOTE_ADDRESS="your.domain.com"
 
 DATABASE_URI=sqlite:///instance/site.db
+
+OAUTHLIB_INSECURE_TRANSPORT=... # 0 | 1
 ```
 
 1. generate `SECRET_KEY` using `python3 -c "import secrets; print(secrets.token_hex(32))"`
@@ -30,7 +32,11 @@ DATABASE_URI=sqlite:///instance/site.db
 3. get `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` from https://console.cloud.google.com
 4. run app using `./app.py`
 
+
 `TARGET=LOCAL` for development on localhost or `TARGET=REMOTE` for deployment on a `REMOTE_ADDRESS`
+
+
+`OAUTHLIB_INSECURE_TRANSPORT=1` for development on localhost or `OAUTHLIB_INSECURE_TRANSPORT=0` for deployment on remote server
 
 
 ---
