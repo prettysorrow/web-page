@@ -3,16 +3,12 @@
 {% block title %}index{% endblock %}
 
 {% block styles %}
-<style>
-    .cover-container h1 {
-        margin-bottom: 3rem;
-    }
-</style>
+<link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet" />
 {% endblock %}
 
 {% block content %}
 <h1>personal web page</h1>
 <p class="lead">
-    <a href="{{ url_for('about') }}" class="btn btn-lg btn-outline-light fw-bold no-text-shadow">Узнать больше</a>
+    <a href="{{ url_for('about') }}" class="btn btn-lg bw-btn">Узнать больше</a>
 </p>
 {% endblock %}

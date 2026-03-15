@@ -2,45 +2,30 @@
 
 {% block title %}projects{% endblock %}
 
-{% block content %}
-<style>
-    .project-links .list-group-item a {
-        color: white;
-        text-decoration: underline;
-        text-decoration-color: white;
-    }
+{% block styles %}
+<link href="{{ url_for('static', filename='css/projects.css') }}" rel="stylesheet" />
+{% endblock %}
 
-    .project-links .list-group-item a:hover {
-        color: gray;
-        text-decoration-color: gray;
-    }
-</style>
+{% block content %}
 <h2>Мои проекты</h2>
 <p class="lead text-white-50">Некоторые работы за последнее время</p>
-<div class="row justify-content-center">
-    <div class="col-md-15 text-start project-links">
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-transparent text-white border-0">
-                <strong>ADT в rukaml:</strong>
-                <a
-                    href="https://github.com/prettysorrow/third-sem-practice">github.com/prettysorrow/third-sem-practice</a>
-            </li>
-            <li class="list-group-item bg-transparent text-white border-0">
-                <strong>Интерпретатор miniML:</strong>
-                <a href="https://github.com/Kakadu/fp25/pull/4">github.com/Kakadu/fp25/pull/4</a>
-            </li>
-            <li class="list-group-item bg-transparent text-white border-0">
-                <strong>Компилятор императивного языка:</strong>
-                <a href="https://github.com/prettysorrow/compiler">github.com/prettysorrow/compiler</a>
-            </li>
-            <li class="list-group-item bg-transparent text-white border-0">
-                <strong>Персональная веб-страница:</strong>
-                <a href="https://github.com/prettysorrow/web-page">github.com/prettysorrow/web-page</a>
-            </li>
-        </ul>
-        <div class="mt-4 text-center">
-            <a href="{{ url_for('index') }}" class="btn btn-lg btn-outline-light fw-bold no-text-shadow">На главную</a>
-        </div>
-    </div>
-</div>
+<ul class="list-group project-links">
+    <li class="list-group-item">
+        <strong>ADT в rukaml:</strong>
+        <a href="https://github.com/prettysorrow/third-sem-practice">github.com/prettysorrow/third-sem-practice</a>
+    </li>
+    <li class="list-group-item">
+        <strong>Интерпретатор miniML:</strong>
+        <a href="https://github.com/Kakadu/fp25/pull/4">github.com/Kakadu/fp25/pull/4</a>
+    </li>
+    <li class="list-group-item">
+        <strong>Компилятор императивного языка:</strong>
+        <a href="https://github.com/prettysorrow/compiler">github.com/prettysorrow/compiler</a>
+    </li>
+    <li class="list-group-item">
+        <strong>Персональная веб-страница:</strong>
+        <a href="https://github.com/prettysorrow/web-page">github.com/prettysorrow/web-page</a>
+    </li>
+</ul>
+<a href="{{ url_for('index') }}" class="btn btn-lg bw-btn">На главную</a>
 {% endblock %}

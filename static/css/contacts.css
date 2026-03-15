@@ -1,0 +1,22 @@
+.contacts-list {
+    justify-content: center;
+}
+
+.contacts-list .list-group-item {
+    border: 0;
+    background: none;
+    font-size: large;
+}
+
+.contacts-list .list-group-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.contacts-list .list-group-item a:hover {
+    color: gray;
+}
+
+.contacts-list .list-group-item strong {
+    color: white;
+}

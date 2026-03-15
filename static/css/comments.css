@@ -14,12 +14,12 @@ body.comments-page {
 
 .comment {
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     margin-bottom: .75rem;
     text-align: left;
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2.5px);
 }
 
 .comment .author {
@@ -44,7 +44,7 @@ body.comments-page {
 
 .login-buttons {
     display: flex;
-    gap: 10px;
+    gap: 2%;
     justify-content: center;
     margin-top: 1rem;
     flex-wrap: wrap;
@@ -63,18 +63,21 @@ body.comments-page {
     flex-wrap: wrap;
     gap: 15px;
     padding: 1rem 0;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 3rem;
     margin-bottom: 1rem;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
     padding: 1rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 7.5px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2.5px);
 }
 
 .auth-info {
     flex-grow: 1;
     color: rgba(255, 255, 255, 0.9);
     font-size: 0.95rem;
+    margin: auto;
 }
 
 .auth-buttons {
@@ -106,42 +109,37 @@ body.comments-page {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
-    width: 100%;
 }
 
-.comments-scrollable {
+.comments-content {
     flex: 1;
     overflow-y: visible;
     min-height: 200px;
-    padding-right: 5px;
     margin-bottom: 1.5rem;
-    border-radius: 6px;
-    background: rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1rem;
 }
 
 .comment-form-container {
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2.5px);
     padding: 1.25rem;
-    border-radius: 6px;
     margin-top: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 7.5px;
 }
 
 .login-buttons-container {
     background: rgba(0, 0, 0, 0.15);
     padding: 1.25rem;
-    border-radius: 6px;
     margin-top: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 7.5px;
 }
 
 .auth-badge {
     background: rgba(255, 255, 255, 0.15);
     color: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 7.5px;
     font-weight: normal;
     font-size: 0.85rem;
     padding: 0.25rem 0.5rem;
@@ -171,8 +169,8 @@ body.comments-page {
     width: 100%;
     background: rgba(0, 0, 0, 0.3) !important;
     color: rgba(255, 255, 255, 0.9) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 7.5px;
     padding: 0.75rem;
     font-size: 1rem;
     resize: vertical;
@@ -199,7 +197,7 @@ body.comments-page {
 
 
 @media (max-width: 768px) {
-    .comments-scrollable {
+    .comments-content {
         padding: 0.75rem;
     }
 
@@ -278,4 +276,9 @@ body.comments-page {
 .page-header {
     margin-top: 2.0rem;
     margin-bottom: 1.25rem;
+}
+
+.login-buttons,
+.auth-status {
+    margin-top: auto;
 }

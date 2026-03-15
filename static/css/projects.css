@@ -1,0 +1,27 @@
+.project-links {
+    justify-content: center;
+    text-align: start;
+    font-size: large;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.project-links .list-group-item {
+    border: 0;
+    background: none;
+}
+
+.project-links .list-group-item strong {
+    color: white;
+}
+
+.project-links .list-group-item a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.project-links .list-group-item a:hover {
+    color: gray;
+    text-decoration-color: gray;
+}

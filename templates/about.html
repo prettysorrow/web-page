@@ -3,30 +3,18 @@
 {% block title %}about{% endblock %}
 
 {% block styles %}
-<style>
-    .profile-img {
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 1.5rem;
-        border: 4px solid #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-</style>
+<link href="{{ url_for('static', filename='css/about.css') }}" rel="stylesheet" />
 {% endblock %}
 
 {% block content %}
-<main class="px-3 text-center">
-    <img src="{{ url_for('static', filename='images/photo.jpg') }}" alt="Profile" class="profile-img">
-    <h2>Балышев А.М</h2>
-    <p class="lead text-white-50">Обо мне</p>
-    <ul class="list-unstyled text-white-50 mb-3">
-        <li>📚 Студент СПбГУ ПИ '28</li>
-        <li>💻 Начинающий компиляторный инженер</li>
-        <li>💸 Стипендиат YADRO</li>
-        <li>🕸️ Веб-разработчик</li>
-    </ul>
-    <a href="{{ url_for('index') }}" class="btn btn-lg btn-outline-light fw-bold no-text-shadow">На главную</a>
-</main>
+<img src="{{ url_for('static', filename='images/photo.jpg') }}" alt="profile photo" class="profile-img">
+<h2>Балышев А.М</h2>
+<p class="lead text-white-50">Обо мне</p>
+<ul class="list-group about-me-list">
+    <li class="list-group-item">📚 Студент СПбГУ ПИ '28</li>
+    <li class="list-group-item">💻 Начинающий компиляторный инженер</li>
+    <li class="list-group-item">💸 Стипендиат YADRO</li>
+    <li class="list-group-item">🕸️ Веб-разработчик</li>
+</ul>
+<a href="{{ url_for('index') }}" class="btn btn-lg bw-btn mt-4">На главную</a>
 {% endblock %}
