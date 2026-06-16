@@ -8,9 +8,6 @@
 [mit-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
 
 
----
-
-
 <img src="screenshots/index.png" alt="index.png" width="600">
 
 
