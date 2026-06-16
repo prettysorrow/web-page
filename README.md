@@ -1,4 +1,14 @@
-### personal web page
+## personal web page
+
+
+[![MIT License][mit-shield]][mit]
+
+
+[mit]: https://opensource.org/licenses/MIT
+[mit-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
+
+
+---
 
 
 <img src="screenshots/index.png" alt="index.png" width="600">
